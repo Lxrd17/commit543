@@ -4,7 +4,38 @@
         <meta charset="UTF-8"/>
         <meta name="theme-color" content="#FF0000">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Gacetis167</title>
+        <script type="text/javascript">
+        var rev = "fwd";
+        function titlebar(val)
+        {
+        var msg = "GACETIS 167 ";
+        var res = " ";
+        var speed = 100;
+        var pos = val;
+        msg = "GACETIS 167";
+        var le = msg.length;
+        if(rev == "fwd"){
+        if(pos < le){
+        pos = pos+1;
+        scroll = msg.substr(0,pos);
+        document.title = scroll;
+        timer = window.setTimeout("titlebar("+pos+")",speed);}
+        else{
+        rev = "bwd";
+        timer = window.setTimeout("titlebar("+pos+")",speed);}}
+        else{
+        if(pos > 0){
+        pos = pos-1;
+        var ale = le-pos;
+        scrol = msg.substr(ale,le);
+        document.title = scrol;
+        timer = window.setTimeout("titlebar("+pos+")",speed);}
+        else{
+        rev = "fwd";
+        timer = window.setTimeout("titlebar("+pos+")",speed);
+        }}}
+        titlebar(0);
+        </script><title>Gacetis167</title><style>figure{margin:0}.tmblr-iframe{position:absolute}.tmblr-iframe.hide{display:none}.tmblr-iframe--amp-cta-button{visibility:hidden;position:fixed;bottom:10px;left:50%;transform:translateX(-50%);z-index:100}.tmblr-iframe--amp-cta-button.tmblr-iframe--loaded{visibility:visible;animation:iframe-app-cta-transition .2s ease-out}</style>
         <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/style.css" />
@@ -38,8 +69,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </p>
-                <br /><br />
-             
+        
                 <div class="img deporte"></div>
                 <h1>:Deporte</h1>
                 <p>
@@ -54,7 +84,7 @@
                 <h1>:Educación</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto suscipit
-                    ducimus nostrum, aut minus eius impedit 
+                    ducimus nostrum, aut minus eius impedit
                 </p>
         </div>
         <script>
