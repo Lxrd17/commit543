@@ -6,8 +6,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: #850011;
-    color: #fff;
+    background: #50C9CE;
+    color: rgb(0, 0, 0);
     font-family: 'Lexend Tera', sans-serif;
 }
 ::-webkit-scrollbar{
@@ -17,7 +17,7 @@ body {
     position: fixed;
     top: 0;
     left: 95%;
-    background: rgb(255, 255, 255);
+    background: #ff5200;
     width: 1.5px;
     z-index: 1;
     transition: 1s;
@@ -55,15 +55,22 @@ p {
     font-size: 24px;
     line-height: 40px;
     font-weight: 200;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(0, 0, 0);
     font-family: 'Source Code Pro', monospace;
+    transition: 1s;
+    text-shadow: -5px 5px 9px rgb(255, 255, 255);
+}
+p:hover{
+  transition: 1s;
+  color: #ff0000;
+  text-shadow: 5px 5px 9px #000;
 }
 .img {
     width: 100%;
     height: 400px;
     background-size: auto;
     margin: 40px auto;
-    box-shadow: 5px 5px 100px rgb(255, 255, 255);
+    box-shadow: 20px 20px 20px #ff5200;
 }
 .img{
     transition: 1s;
@@ -71,17 +78,21 @@ p {
 .img:hover{
     transition: 1s;
     transform: scale(.9);
-    box-shadow: 5px 5px 50px rgb(255, 255, 255);
+    box-shadow: 25px 25px 10px rgb(0, 0, 0);
+    animation: glitch-skew 1s linear infinite;
 }
 .title{
     background-image: url('../img/hero-img.jpg');
     text-align: center;
     font-size: 100px;
-    text-shadow: 5px 5px 5px black;
     color: white;
 }
 .gaceta{
     text-align: center;
+    text-shadow: 5px 5px 5px #ff5200;
+}
+h1{
+  text-shadow: 5px 5px 5px #ff5200;
 }
 .covid{
     background: url('../img/c1.jpg') no-repeat 50% 50%;
@@ -136,6 +147,7 @@ p {
     text-shadow: -2px 0 #1900ff, 2px 2px #FF0000;
     animation: glitch-anim2 1s infinite linear alternate-reverse;
   }
+  */
   @keyframes glitch-anim2 {
     0% {
       clip: rect(20px, 9999px, 98px, 0);
@@ -222,6 +234,13 @@ p {
       transform: skew(0.27deg);
     }
   }
+.dance{
+  transition: 1s;
+}
+.dance:hover{
+  transition: 1s;
+  animation: glitch-anim2 3s linear infinite;
+}
   @keyframes glitch-skew {
     0% {
       transform: skew(5deg);
@@ -256,6 +275,6 @@ p {
     100% {
       transform: skew(4deg);
     }
-  }
- 
+}
+/* 
 */
