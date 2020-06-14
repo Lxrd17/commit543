@@ -6,7 +6,7 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: #a8a8a8;
+    background: #850011;
     color: #fff;
     font-family: 'Lexend Tera', sans-serif;
 }
@@ -65,9 +65,9 @@ p {
 .img {
     width: 100%;
     height: 400px;
-    background-size: cover;
+    background-size: auto;
     margin: 40px auto;
-    box-shadow: 5px 5px 100px rgb(0, 0, 0);
+    box-shadow: 5px 5px 100px rgb(255, 255, 255);
 }
 .img{
     transition: 1s;
@@ -75,7 +75,7 @@ p {
 .img:hover{
     transition: 1s;
     transform: scale(.9);
-    box-shadow: 5px 5px 50px rgb(255, 0, 0);
+    box-shadow: 5px 5px 50px rgb(255, 255, 255);
 }
 .title{
     background-image: url('../img/hero-img.jpg');
