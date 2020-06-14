@@ -30,7 +30,6 @@ body {
     overflow: hidden;
     width: 100%;
 }
-
 .smooth-scroll-wrapper {
     position: fixed;
     z-index: 2;
@@ -38,7 +37,6 @@ body {
     left: 0;
     overflow: hidden;
 }
-
 .content {
     width: 80%;
     margin: 160px auto;
